@@ -1,0 +1,56 @@
+[
+    {
+        "id": "3540358d.2f943a",
+        "type": "tab",
+        "label": "Covid-19-API-Test",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "8baf577d.4886",
+        "type": "debug",
+        "z": "3540358d.2f943a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 610,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f81456b6.9c835",
+        "type": "inject",
+        "z": "3540358d.2f943a",
+        "name": "",
+        "topic": "",
+        "payload": "Germany",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 160,
+        "wires": [
+            [
+                "4a589ca.e338e64"
+            ]
+        ]
+    },
+    {
+        "id": "4a589ca.e338e64",
+        "type": "covid19api",
+        "z": "3540358d.2f943a",
+        "name": "",
+        "x": 340,
+        "y": 160,
+        "wires": [
+            [
+                "8baf577d.4886"
+            ]
+        ]
+    }
+]

@@ -1,0 +1,29 @@
+<script type="text/javascript">
+  RED.nodes.registerType('covid19api', {
+    category: 'function',
+    color: '#a6bbcf',
+    icon: 'white-globe.png',
+    defaults: {
+      name: { value: '' }
+    },
+    inputs: 1,
+    outputs: 1,
+    label: function() {
+      return this.name || 'covid19api';
+    }
+  });
+</script>
+
+<script type="text/html" data-template-name="covid19api">
+  <div class="form-row">
+    <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+</script>
+
+<script type="text/html" data-help-name="covid19api">
+  <p>
+    This node returns the number of Covid-19 cases that have
+    been confirmed yesterday for a certain country.
+  </p>
+</script>
